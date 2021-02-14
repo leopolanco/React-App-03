@@ -1,0 +1,22 @@
+@import '../settings.scss';
+
+.filter {
+  text-align: center;
+  > input {
+    margin: 0 1.2rem 1.2rem 0.3rem;
+    padding: 0.3rem 0.4rem;
+    border: none;
+    border-bottom: 1px solid $greyBorder;
+    background: $off-white;
+  }
+  > span {
+    
+    > svg {
+        color: grey;
+        position: relative;
+        
+        top:8px;
+      }
+  }
+  
+}
