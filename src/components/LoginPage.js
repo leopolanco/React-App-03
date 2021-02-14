@@ -3,6 +3,13 @@ import { Redirect } from 'react-router-dom'
 import { SwitchIcons } from '../resources/svg'
 const LoginPage = () => {
   const [redirect, setRedirect] = useState(false)
+  const [user, setUser] = useState('')
+
+  const handleUser = e => {
+    if (!e.target.value || e.target.value.match(/[a-zA-Z]+/)) {
+    setUser(e.target.value)
+    }
+  }
   const onSubmitHandler = () => {
     setRedirect(true)
   }
@@ -33,6 +40,8 @@ const LoginPage = () => {
                   className='input--field'
                   name='userInput'
                   pattern='[a-z]+'
+                  value={user}
+                  onChange={handleUser}
                   title="No numbers, caps nor special characters"
                   required
                 />
@@ -44,6 +53,7 @@ const LoginPage = () => {
                   className='input--field'
                   name='passwordInput'
                   required
+                  minLength='8'
                   pattern='.{,8}'
                   title="Password must be 8 characters long"
                 />

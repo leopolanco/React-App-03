@@ -5,7 +5,7 @@ import RegistrationForm2 from '../components/RegistrationForm2'
 import RegistrationFinal from '../components/RegistrationFinal'
 
 const Registration = () => {
-  const [currPage, setCurrPage] = useState(2)
+  const [currPage, setCurrPage] = useState(1)
   const [freeNavigation, setFreeNavigation] = useState(false)
   const [player, setPlayer] = useState({})//need the values in the parent so we can save them for later
   const [teamArray, setTeamArray] = useState([])

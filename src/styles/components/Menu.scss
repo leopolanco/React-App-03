@@ -48,11 +48,8 @@
   font-size: 12px;
   display: flex;
   font-weight: 500;
-  &:visited,
-  &:focus,
-  &:active {
-    color: white;
-  }
+  color: white;
+
   > div {
     display: flex;
     //this lines the icon with the text
