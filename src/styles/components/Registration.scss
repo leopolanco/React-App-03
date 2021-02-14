@@ -1,7 +1,7 @@
 @import '../settings.scss';
 
 .reg {
-padding: 0 0 7.2rem 0; //bottom padding for spacing.
+  padding: 0 0 7.2rem 0; //bottom padding for spacing.
   background-color: rgb(201, 201, 201);
 }
 
@@ -48,7 +48,7 @@ padding: 0 0 7.2rem 0; //bottom padding for spacing.
 }
 
 .reg__content {
-  margin: 5rem 1rem 0 1rem;
+  margin: 5rem 1.2rem 0 1.2rem;
   display: flex;
   box-shadow: 0 0 16px 0 rgb(58, 58, 58);
   background: white;
@@ -56,7 +56,7 @@ padding: 0 0 7.2rem 0; //bottom padding for spacing.
 
 .reg__content__left {
   color: white;
-  height: 80%;
+
   padding: 15rem 10rem;
   background: linear-gradient(90deg, navy, black);
 }
@@ -112,48 +112,60 @@ padding: 0 0 7.2rem 0; //bottom padding for spacing.
   width: 23px;
 }
 
-.section__form {
-  margin: 6.4rem 0.6rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  > input,
-  select {
-    margin: 1.2rem 0.6rem 0 0.6rem; //separator between inputs
-    padding: 1rem;
-    flex-basis: 45%;
-    border: none;
-    border-bottom: 1px solid $greyBorder;
-    &:active,
-    &:focus {
-      outline: none;
-      border-bottom: 2px solid black !important;
-    }
-  }
-  > div > input {
-    //this targets the additional form when user inputs a position
-    margin: 1.2rem 0.6rem 0 0.6rem; //separator between inputs
-    padding: 1rem 3.6rem 1rem 0;
-    border: none;
-    border-bottom: 1px solid $greyBorder;
-    &:active,
-    &:focus {
-      outline: none;
-      border-bottom: 2px solid black !important;
-    }
-  }
-  .additionalPositions {
-    font-size: 12px;
-    color: grey;
-    > input {
-      //targetting the checkboxes
-      margin: 0 0.2rem 0 1rem;
-    }
+.final__section {
+  display: grid;
+  padding: 10rem;
+  text-align: center;
+}
+
+.final--title {
+  margin: 0 0 2rem 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: navy;
+  letter-spacing: 2px;
+  font-family: $OpenSans;
+}
+
+.final--subtitle {
+  margin: 0 0 4.8rem 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.final--button {
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: $Poppins;
+  padding: 1rem;
+  color: white;
+  border: none;
+  background: linear-gradient(90deg, navy, black, navy);
+  &:hover {
+    background: linear-gradient(90deg, black, navy, black);
   }
 }
 
-.section__form--button {
-  @extend .form--button;
-  margin: 2.4rem 5rem 0 0; //aligning with the form
-  padding: 0.6rem 1.6rem;
-  float: right; //positioned to the right
+.freeNavigation__buttons {
+  padding: 0 1.2rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -63px;
+  font-size: 12px;
+}
+
+.freeNavigation--button {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  background: rgb(114, 114, 114);
+  border-radius: 3px;
+  font-family: $Poppins;
+  color: rgb(204, 204, 204);
+}
+
+.button--active {
+  @extend .freeNavigation--button;
+  background: navy;
 }

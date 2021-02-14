@@ -11,6 +11,17 @@ $greyBorder: rgb(59, 59, 59, 0.6);
 $logoColor: rgb(0, 189, 189);
 $buttonColor: rgb(88, 193, 197);
 $grey: rgb(170, 170, 170);
+
+
+.sameWidthTable {
+    display: grid;
+  grid-auto-columns: 1fr; 
+  grid-auto-flow: column; // to make the items in the grid the same width
+  text-align: center;
+}
+
 //dev variables
 $border: 1px solid white;
 $border2: 1px solid black;
+
+

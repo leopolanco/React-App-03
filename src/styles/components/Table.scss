@@ -1,3 +1,5 @@
+@import '../settings.scss';
+
 .table__content {
   box-shadow: 0 0 18px 0 grey;
   border-radius: 3px;
@@ -24,20 +26,14 @@
 }
 
 .table__header {
-  display: grid;
-  grid-auto-columns: 1fr; //these grid options
-  grid-auto-flow: column; //make our grid the same width
-  text-align: center;
+  @extend .sameWidthTable;
   padding: 0.6rem 0;
   font-size: 14px;
   border-bottom: 1px solid grey;
 }
 
 .playerInfo {
-  display: grid;
-  grid-auto-columns: 1fr; //these grid options
-  grid-auto-flow: column; //make our grid the same width
-  text-align: center;
+  @extend .sameWidthTable;
   padding: 0.8rem 0; //separation between players
   font-size: 12px;
   border-bottom: 1px solid rgb(177, 177, 177);
