@@ -1,0 +1,69 @@
+@import '../settings.scss';
+
+.menu {
+  background: linear-gradient(0deg, rgb(19, 171, 190), rgb(0, 60, 77));
+  height: 100%;
+  color: #fff;
+}
+
+.menu__header {
+  padding: 0.6rem 0.3rem 2.8rem 0.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__header--icon {
+  color: $logoColor;
+  font-size: 20px;
+}
+
+.menu__header--text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  > span:nth-child(1) {
+    //welcome
+    margin: 0 0 0.1rem 0;
+    color: rgb(143, 121, 0);
+  }
+  > span:nth-child(2) {
+    //agent resource center
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+}
+
+
+
+.menu__options--title {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: $OpenSans;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.menu__options--option {
+  padding: 0.6rem 0.5rem; //separator between options
+  font-size: 12px;
+  display: flex;
+  font-weight: 500;
+  &:visited, &:focus, &:active {
+      color: white;
+  }
+  > div {
+    display: flex;
+    //this lines the icon with the text
+    >svg { //little space to the right
+        margin: 0 0.5rem 0 0.5rem;
+    }
+  }
+  &:hover {
+    background: linear-gradient(
+      to right,
+      rgb(0, 19, 24),
+      rgba(0, 38, 48, 0.411)
+    );
+  }
+}

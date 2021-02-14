@@ -1,0 +1,52 @@
+@import '../settings.scss';
+
+.dashboard {
+  display: flex;
+}
+
+.menu__left {
+  position: relative;
+  left: 0;
+  width: 16.5%;
+}
+
+.content__right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $off-white;
+}
+.container {
+  margin: 0 0.8rem;
+}
+
+.header {
+  border-bottom: 1px solid $greyBorder;
+  display: flex;
+  justify-content: space-between;
+  > span {
+    //separating the spans from the walls
+    margin: 0.6rem;
+  }
+}
+
+.header--user {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentOption {
+  margin: 0.6rem 0 1.2rem 0;
+  color: navy;
+  font-size: 16px;
+  > div {
+    > svg {
+      //styling the svg
+      color: black;
+      margin: 0 0.3rem;
+      position: relative;
+      top: 7px; //center height
+    }
+  }
+}

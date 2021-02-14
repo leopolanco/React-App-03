@@ -1,7 +1,8 @@
 //imports
-
+@import './components/Menu';
 @import './components/LoginPage';
-
+@import './components/Dashboard';
+@import './components//Table.scss';
 //general settings
 * {
   margin: 0;
@@ -10,14 +11,11 @@
   scroll-behavior: smooth;
 }
 
-a {
+a,
+a:visited,
+a:focus,
+a:active {
   text-decoration: none;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 1.6rem;
-  max-width: 80rem;
 }
 
 body {

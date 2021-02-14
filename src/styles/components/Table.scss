@@ -1,0 +1,105 @@
+.table__content {
+  box-shadow: 0 0 18px 0 grey;
+  border-radius: 3px;
+  margin: 0 1rem;
+}
+
+.team__header {
+  @extend .table__header;
+  background: rgb(0, 136, 125);
+  color: white;
+  border: none;
+  font-size: 11px;
+}
+.team__info {
+  @extend .playerInfo;
+  background: rgb(0, 197, 115, 0.5);
+  font-size: 12px;
+  border: none;
+}
+
+.team__player {
+  margin: 0.6rem 0 1.2rem 1.2rem;
+  font-size: 10.5px;
+}
+
+.table__header {
+  display: grid;
+  grid-auto-columns: 1fr; //these grid options
+  grid-auto-flow: column; //make our grid the same width
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 14px;
+  border-bottom: 1px solid grey;
+}
+
+.playerInfo {
+  display: grid;
+  grid-auto-columns: 1fr; //these grid options
+  grid-auto-flow: column; //make our grid the same width
+  text-align: center;
+  padding: 0.8rem 0; //separation between players
+  font-size: 12px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+  &:hover {
+    background-color: rgb(180, 180, 180, 0.6);
+    cursor: pointer;
+    transition: background-color 300ms ease;
+  }
+  &:not(:hover) {
+    transition: background-color 300ms ease;
+  }
+}
+
+.pagination__info {
+  margin: 1.2rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pagination__totals {
+  color: grey;
+  font-size: 12px;
+}
+
+.pagination__perPage {
+  color: grey;
+  font-size: 13px;
+  > select {
+    //styling the select box
+    margin: 0 0 0 0.5rem;
+    color: rgb(80, 80, 80);
+    border: none;
+    border-bottom: 1px solid $greyBorder;
+    background: $off-white;
+    padding: 0 0.3rem 0.1rem 0;
+  }
+}
+
+.pagination__pages {
+  color: grey;
+  font-size: 12px;
+  display: flex;
+}
+
+.pagination__pages--text {
+  margin: 0.2rem 0 0 0;
+}
+
+//rotating the svgs
+.pagination__pages--nextIcon {
+  cursor: pointer;
+  margin: 0 0 0 0.5rem;
+  > svg {
+    transform: rotate(90deg);
+  }
+}
+
+.pagination__pages--backIcon {
+  cursor: pointer;
+  margin: 0 0 0 0.5rem;
+  > svg {
+    transform: rotate(270deg);
+    color: grey;
+  }
+}
