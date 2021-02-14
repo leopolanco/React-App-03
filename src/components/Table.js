@@ -10,7 +10,7 @@ import {
 const Table = () => {
   const [result, setResult] = useState({})
   const [players, setPlayers] = useState([])
-  const [dataInfo, setDataInfo] = useState({})
+  const [meta, setMeta] = useState({})
   const [showTeam, setShowTeam] = useState(0)
   const [errorMsg, setErrorMsg] = useState('')
   const [page, setPage] = useState(1)
@@ -39,14 +39,15 @@ const Table = () => {
     //when result is changed, record the data and the meta
     if (result) {
       setPlayers(result.data)
-      setDataInfo(result.meta)
+      setMeta(result.meta)
     }
   }, [result])
-  console.log(result)
 
   return (
     <div>
       <div className='table__content'>
+        {/* Seguimos el dise;o grafico de la prueba
+        donde este header aparece siempre */}
         <div className='team__header'>
           <div>Nombre equipo</div>
           <div>Conferencia</div>
@@ -123,10 +124,10 @@ const Table = () => {
           ))}
       </div>
       <div className='pagination'>
-        {dataInfo && (
+        {meta && (
           <div className='pagination__info'>
             <div className='pagination__totals'>
-              <div>Jugadores Totales: {dataInfo.total_count}</div>
+              <div>Jugadores Totales: {meta.total_count}</div>
             </div>
             <div className='pagination__perPage'>
               Jugadores por pagina:
@@ -144,7 +145,7 @@ const Table = () => {
 
             <div className='pagination__pages'>
               <div className='pagination__pages--text'>
-                {dataInfo.current_page} of {dataInfo.total_pages}
+                {meta.current_page} of {meta.total_pages}
               </div>
               <span
                 className='pagination__pages--backIcon'

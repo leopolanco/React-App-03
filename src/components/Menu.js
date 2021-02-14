@@ -15,62 +15,54 @@ const Menu = () => {
       </div>
       <div className='menu__options'>
         <div className='menu__options--title'> agent options</div>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Summary - BOB Agent
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Commissions
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Book of business
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Referrals
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Reports
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Reconciliations
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Referrals Life
           </div>
-        </a>
-        <a href='#' className='menu__options--option'>
-          {' '}
+        </div>
+        <div className='menu__options--option'>
           <div>
             <SquareIcon />
             Documents and Resources
           </div>
-        </a>
+        </div>
       </div>
     </div>
   )

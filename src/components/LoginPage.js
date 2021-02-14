@@ -26,7 +26,7 @@ const LoginPage = () => {
               <span>Welcome!</span>
             </div>
             <form className='form' onSubmit={onSubmitHandler} method='GET'>
-              <label className='input--label' name='userInput'>
+              <label className='input--label' htmlFor='userInput'>
                 User
                 <input
                   type='text'
@@ -37,7 +37,7 @@ const LoginPage = () => {
                   required
                 />
               </label>
-              <label className='input--label' name='passwordInput'>
+              <label className='input--label' htmlFor='passwordInput'>
                 Password
                 <input
                   type='password'

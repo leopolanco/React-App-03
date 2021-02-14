@@ -33,8 +33,6 @@
   }
 }
 
-
-
 .menu__options--title {
   text-transform: uppercase;
   font-size: 11px;
@@ -45,18 +43,22 @@
 }
 
 .menu__options--option {
+  cursor: pointer;
   padding: 0.6rem 0.5rem; //separator between options
   font-size: 12px;
   display: flex;
   font-weight: 500;
-  &:visited, &:focus, &:active {
-      color: white;
+  &:visited,
+  &:focus,
+  &:active {
+    color: white;
   }
   > div {
     display: flex;
     //this lines the icon with the text
-    >svg { //little space to the right
-        margin: 0 0.5rem 0 0.5rem;
+    > svg {
+      //little space to the right
+      margin: 0 0.5rem 0 0.5rem;
     }
   }
   &:hover {

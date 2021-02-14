@@ -1,0 +1,159 @@
+@import '../settings.scss';
+
+.reg {
+padding: 0 0 7.2rem 0; //bottom padding for spacing.
+  background-color: rgb(201, 201, 201);
+}
+
+.reg__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2.4rem;
+}
+
+.header--title {
+  margin: 0.3rem 0 0 0; //aligning the text with the buttons
+  color: navy;
+  font-size: 20px;
+  > svg {
+    color: black;
+    position: relative;
+    top: 5px;
+    left: -10px;
+  }
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.header__buttons--buttonBlue {
+  margin: 0 1.2rem 0 0;
+  padding: 0.4rem 0.65rem 0.7rem 0.65rem;
+  background: rgb(83, 215, 255);
+  box-shadow: 0 4px 2px -2px gray;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  > svg {
+    color: black;
+    position: relative;
+    top: 7px;
+  }
+}
+
+.header__buttons--buttonYellow {
+  @extend .header__buttons--buttonBlue;
+  background: rgb(255, 166, 0);
+}
+
+.reg__content {
+  margin: 5rem 1rem 0 1rem;
+  display: flex;
+  box-shadow: 0 0 16px 0 rgb(58, 58, 58);
+  background: white;
+}
+
+.reg__content__left {
+  color: white;
+  height: 80%;
+  padding: 15rem 10rem;
+  background: linear-gradient(90deg, navy, black);
+}
+.reg__id {
+  display: grid;
+  text-align: center;
+  float: center;
+  > span {
+    //separating items
+    margin: 0.6rem 0 0 0;
+  }
+  > span > svg {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.reg__content__right {
+  margin: 1.2rem 2.4rem;
+  width: 75rem; //same width as parent
+}
+
+.section--active {
+  > .section--number {
+    background-color: #2eada3 !important;
+  }
+  > .section--text {
+    color: black !important;
+  }
+}
+
+.section--indicator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.section--text {
+  color: grey;
+}
+
+.section--number {
+  margin: 0 0.6rem 0 0;
+  //default color for the circles
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(80, 80, 80);
+  padding: 1px 0 0 0;
+  height: 23px;
+  color: white;
+  width: 23px;
+}
+
+.section__form {
+  margin: 6.4rem 0.6rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  > input,
+  select {
+    margin: 1.2rem 0.6rem 0 0.6rem; //separator between inputs
+    padding: 1rem;
+    flex-basis: 45%;
+    border: none;
+    border-bottom: 1px solid $greyBorder;
+    &:active,
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid black !important;
+    }
+  }
+  > div > input {
+    //this targets the additional form when user inputs a position
+    margin: 1.2rem 0.6rem 0 0.6rem; //separator between inputs
+    padding: 1rem 3.6rem 1rem 0;
+    border: none;
+    border-bottom: 1px solid $greyBorder;
+    &:active,
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid black !important;
+    }
+  }
+  .additionalPositions {
+    font-size: 12px;
+    color: grey;
+    > input {
+      //targetting the checkboxes
+      margin: 0 0.2rem 0 1rem;
+    }
+  }
+}
+
+.section__form--button {
+  @extend .form--button;
+  margin: 2.4rem 5rem 0 0; //aligning with the form
+  padding: 0.6rem 1.6rem;
+  float: right; //positioned to the right
+}
