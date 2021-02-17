@@ -2,6 +2,7 @@ import React from 'react'
 import { SquareIcon, HambIcon } from '../resources/svg'
 import {Link} from 'react-router-dom'
 const Menu = () => {
+  console.log(process.env)
   return (
     <div className='menu'>
       <div className='menu__header'>
