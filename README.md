@@ -1,5 +1,9 @@
 # Frontend Test
 
+
+hosted in test-claro.vercel.app/
+
+
 Made with react,
 
 It is not optimized for mobile since I did this in a rush, will fix later
