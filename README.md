@@ -8,4 +8,4 @@ To run:
 -npm i
 -npm start
 
-pages: '/','/dashboard','/registration'
+pages: '/',  '/dashboard',  '/forms'
