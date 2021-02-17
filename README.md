@@ -17,4 +17,4 @@ able to go to next page
 
 
 Third page: '/forms'
-3 step form, after correctly completing the first form, it lets advance to the next one, after last form you can navigate through all before sending all the data to a db. 
+3 step form, after correctly completing the first form, it lets you advance to the next one, after the last form you can navigate through all of them before sending the data to a db. 
