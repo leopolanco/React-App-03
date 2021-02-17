@@ -1,6 +1,8 @@
 # Frontend Test
 
-Made with react
+Made with react,
+
+It is not optimized for mobile since I did this in a rush, will fix later
 
 First page : '/'
 Simple login page with inputs validated
