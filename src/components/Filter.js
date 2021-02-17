@@ -4,31 +4,31 @@
 //sorts the array 
 
 
-import React, { useState, useEffect } from 'react'
-import nba from '../api/nba'
+import React, { useState} from 'react'
+// import nba from '../api/nba'
 import {SearchIcon} from '../resources/svg'
 const Filter = () => {
 
   const [searchNombre, setSearchNombre] = useState('')
   const [searchApellido, setSearchApellido] = useState('')
-  const [result, setResult] = useState({})
+  // const [result, setResult] = useState({})
 
-  const apiLastName = async lastname => {
-    try {
-      const response = await nba.get(`/players/firstName/${lastname}`)
-      setResult(response.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
-  const apiFirstName = async firstname => {
-    try {
-      const response = await nba.get(`/players/firstName/${firstname}`)
-      setResult(response.data)
-    } catch (err) {
-      console.error(err.message)
-    }
-  }
+  // const apiLastName = async lastname => {
+  //   try {
+  //     const response = await nba.get(`/players/firstName/${lastname}`)
+  //     setResult(response.data)
+  //   } catch (err) {
+  //     console.error(err.message)
+  //   }
+  // }
+  // const apiFirstName = async firstname => {
+  //   try {
+  //     const response = await nba.get(`/players/firstName/${firstname}`)
+  //     setResult(response.data)
+  //   } catch (err) {
+  //     console.error(err.message)
+  //   }
+  // }
   const handleSearch = e => {
     if (!e.target.value || e.target.value.match(/[a-zA-Z]+/)) {
       if (e.target.name === 'nombre') {
