@@ -12,6 +12,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  @media(max-width: 45rem){
+    position: relative;
+    transform: none;
+    display: inline;
+    left: 0;
+  }
 }
 
 .switchVersion {
@@ -50,6 +56,9 @@ body {
   text-indent: 0.4rem;
   font-size: 3rem;
   font-family: $OpenSans;
+  @media(max-width: 45rem){
+    display: none;
+  }
 }
 
 .login__container--right {

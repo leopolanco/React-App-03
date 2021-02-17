@@ -11,7 +11,7 @@ const AppRouters = () => {
         <Switch>
           <Route path='/' component={LoginPage} exact={true} />
           <Route path='/dashboard' component={Dashboard} />
-          <Route path='/registration' component={Registration} />
+          <Route path='/forms' component={Registration} />
         </Switch>
       </BrowserRouter>
     </div>

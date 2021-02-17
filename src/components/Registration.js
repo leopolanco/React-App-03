@@ -3,6 +3,7 @@ import { SquareIcon, CircleIcon } from '../resources/svg'
 import RegistrationForm from '../components/RegistrationForm'
 import RegistrationForm2 from '../components/RegistrationForm2'
 import RegistrationFinal from '../components/RegistrationFinal'
+import { Link } from 'react-router-dom'
 
 const Registration = () => {
   const [currPage, setCurrPage] = useState(1)
@@ -17,14 +18,14 @@ const Registration = () => {
           Referrals
         </div>
         <div className='header__buttons'>
-          <div className='header__buttons--buttonBlue'>
+          <Link className='header__buttons--buttonBlue' to='/'>
             <SquareIcon />
-            Referral Report
-          </div>
-          <div className='header__buttons--buttonYellow'>
+            Login
+          </Link>
+          <Link className='header__buttons--buttonYellow' to='/dashboard'>
             <SquareIcon />
-            New Referral
-          </div>
+            Dashboard
+          </Link>
         </div>
       </div>
       <div className='reg__content'>

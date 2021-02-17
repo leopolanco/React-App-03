@@ -16,26 +16,27 @@ const Menu = () => {
       </div>
       <div className='menu__options'>
         <div className='menu__options--title'> agent options</div>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             
             <SquareIcon />
-            Summary - BOB Agent
+            Click here to go to Forms
           </div>
           
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/'>
         
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
-            Commissions
+            Click here to go to Login
+
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
@@ -43,7 +44,7 @@ const Menu = () => {
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
@@ -51,7 +52,7 @@ const Menu = () => {
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
@@ -59,7 +60,7 @@ const Menu = () => {
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
@@ -67,7 +68,7 @@ const Menu = () => {
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />
@@ -75,7 +76,7 @@ const Menu = () => {
           </div>
         </div>
         </Link>
-        <Link  to='/registration'>
+        <Link  to='/forms'>
         <div className='menu__options--option'>
           <div>
             <SquareIcon />

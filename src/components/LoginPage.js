@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import { SwitchIcons } from '../resources/svg'
 const LoginPage = () => {
   const [redirect, setRedirect] = useState(false)
@@ -17,11 +17,11 @@ const LoginPage = () => {
     <div className='container'>
       <div className='login__container'>
         <div className='switchVersion'>
-          <a href='#switchVersion'>
+          <Link to='/dashboard'>
             <span className='switchVersion--icon'>A</span>
             <SwitchIcons />
-            Click here to switch to previous ARC version
-          </a>
+            Click here to go to the next page
+          </Link>
         </div>
         <div className='login__container--left'>
           <span>ARC</span>

@@ -1,4 +1,4 @@
-Frontend test for Claro Insurances
+Frontend test
 
 Made with react
 
@@ -7,3 +7,5 @@ To run:
 -cmd in folder
 -npm i
 -npm start
+
+pages: '/','/dashboard','/registration'

@@ -1,10 +1,14 @@
+// this page is unfinished
+
+//should be replaced by a selector who
+//sorts the array 
+
+
 import React, { useState, useEffect } from 'react'
 import nba from '../api/nba'
 import {SearchIcon} from '../resources/svg'
 const Filter = () => {
-  //this can be done better with a selector
-  //but this works
-  //this doesn't work.
+
   const [searchNombre, setSearchNombre] = useState('')
   const [searchApellido, setSearchApellido] = useState('')
   const [result, setResult] = useState({})
