@@ -16,7 +16,7 @@ Simple login page with inputs validated
 Second page: '/dashboard'
 Takes the nba api and displays it in a table, 
 able to change quantity of results (25,50,100 per page)
-able to go to next page
+able to query the next results
 
 
 
