@@ -1,4 +1,4 @@
-# Frontend Test
+# Frontend App
 
 
 hosted in test-claro.vercel.app/
@@ -6,7 +6,6 @@ hosted in test-claro.vercel.app/
 
 Made with react,
 
-It is not optimized for mobile since I did this in a rush, will fix later
 
 First page : '/'
 Simple login page with inputs validated
